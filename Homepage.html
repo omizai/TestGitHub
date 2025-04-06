@@ -26,13 +26,21 @@
                 <p1>This will push(also create) BranchA to the github with BranchA source code</p1>
         
         <h1>Merge 2 branch</h1>
-            <h3>[Local Git] git checkout master</h3>
+            <h3>1. [Local Git] git checkout master</h3>
                 <p1>Switch to master on local git(which is not get latest yet)</p1>
-            <h3>[Local Git] git pull origin master</h3>
+            <h3>2. [Local Git] git pull origin master</h3>
                 <p1>Pull the source code from remote to update the master on local</p1>
-            <h3>[Local Git] git checkout BranchA</h3>
+            <h3>3. [Local Git] git checkout BranchA</h3>
                 <p1>Switch to BranchA</p1>
-            <h3>[Local Git] git rebase master</h3>
+            <h3>4. [Local Git] git rebase master</h3>
                 <p1>Use master as base, Merge current branch code (BranchA) to it</p1>
+            <h3>5. [Local Git] git push -f origin BranchA</h3>
+                <p1>Push the rebased version back to github branchA</p1>
+            <h3>6. [Git hub] Create Pull request (pull BranchA to main)</h3>
+            <h3>7. [Git hub] Approve pull request. Use Squash and merge</h3>
+            <h3>8. [Git hub] Delete branchA on github</h3>
+            <h3>9. [Local Git] git checkout master</h3>
+                <p1>Switch to master before delete branch A</p1>
+            <h3>10. [Local Git] git branch -D BranchA</h3>
     </body>
 </html>
